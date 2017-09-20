@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../../js/lib/requirejs/require.js"></script>
+<script>
+    require([ '../../js/config.js' ], function(config) {
+        require([ 'pages/test/test' ]);
+    });
+</script>
+</head>
+<body>
+	<div class="container" id="binding">
+		<div class="page-header">
+			<h3>Test</h3>
+		</div>
+		<div class="text-left">
+			<h4 data-bind="text: test"></h4>
+		</div>
+	</div>
+</body>
+</html>
